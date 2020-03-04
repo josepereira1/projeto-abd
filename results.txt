@@ -1,0 +1,142 @@
+/-----------------------------------------------------------------------/
+
+1st configuration (base configuration)
+
+1st run
+Abort rate:0.0047801146
+Average latency:9.590778097982708
+Measured tpmC:48.050053
+
+2nd run
+Abort rate:0.010436432
+Average latency:8.95973154362416
+Measured tpmC:50.25319
+
+average
+Abort rate:0.0076082733
+Average latency:9.27525482
+Measured tpmC:49.1516215
+
+/-----------------------------------------------------------------------/
+
+2nd configuration (change number of clients)
+
+	tpcc.numclients = 20
+
+1st run
+Abort rate:0.023506366
+Average latency:7.012036108324975
+Measured tpmC:88.09909
+
+2nd run
+
+Abort rate:0.0193032
+Average latency:6.562169947191551
+Measured tpmC:94.43321
+
+average
+
+Abort rate:0.021404783
+Average latency:6.787103027758263
+Measured tpmC:91.26615
+
+/-----------------------------------------------------------------------/
+
+3rd configuration (change number of clients and thread pool)
+
+	tpcc.numclients = 20
+	pool.size=40
+
+1st
+
+Abort rate:0.018075231
+Average latency:6.208457711442786
+Measured tpmC:87.000244
+
+2nd
+
+Abort rate:0.015625
+Average latency:6.413179413179413
+Measured tpmC:92.54365
+
+average
+
+Abort rate:0.0168501155
+Average latency:6.3108185623111
+Measured tpmC:89.771947
+
+/-----------------------------------------------------------------------/
+
+4th configuration (change number of warehouses)
+
+	tpcc.number.warehouses=3
+
+1st
+
+Abort rate:0.011074918
+Average latency:7.369565217391305
+Measured tpmC:69.00074
+
+2nd
+
+Abort rate:0.018099548
+Average latency:7.142857142857143
+Measured tpmC:66.124535
+
+average
+
+Abort rate:0.014587233
+Average latency:7.256211180124224
+Measured tpmC:67.5626375
+
+/-----------------------------------------------------------------------/
+
+5th configuration (change number of warehouses, number of clients and thread pool)
+
+	tpcc.number.warehouses=3
+	tpcc.numclients = 20
+	pool.size=40
+
+1st
+
+Abort rate:0.033145715
+Average latency:6.518434670116429
+Measured tpmC:135.54
+
+2nd
+
+Abort rate:0.032288108
+Average latency:5.971126082771896
+Measured tpmC:139.56674
+
+average
+
+Abort rate:0.0327169115
+Average latency:6.244780376444163
+Measured tpmC:137.55337
+
+/-----------------------------------------------------------------------/
+
+5th configuration (change number of warehouses, number of clients and thread pool)
+
+	tpcc.number.warehouses=4
+	tpcc.numclients = 20
+	pool.size=40
+
+1st
+
+Abort rate:0.042572882
+Average latency:6.213388110198164
+Measured tpmC:184.36653
+
+2nd
+
+Abort rate:0.03979981
+Average latency:5.772896500372301
+Measured tpmC:178.26595
+
+average
+
+
+
+/-----------------------------------------------------------------------/

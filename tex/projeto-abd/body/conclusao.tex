@@ -1,0 +1,15 @@
+\chapter{Conclusão} \label{chap:conc}
+
+\hspace{5mm} Assim conclui-se que os objetivos inicialmente propostos não totalmente atingidos.
+
+\hspace{5mm} A fase inicial, teve como o objetivo encontrar uma configuração de referência, sendo que esta etapa foi bastante trabalhosa, pois foram necessários muitos testes até se chegar aos valores tanto das configurações da máquina, bem como do número de warehouses e clientes por warehouse.
+
+\hspace{5mm} A otimização do teste de carga baseou-se na análise dos parâmetros do \textbf{PostgreSQL}, para se conseguir melhor desempenho a partir da configuração de referência. Para tal, também foram realizados testes, para diferentes valores desses campos isoladamente, e de seguida, conjuntamente, para se chegar à configuração ideal.
+Algumas dificuldades encontradas nesta fase, foi a quantidade de testes necessários para se conseguir provar a otimização da configuração final.
+
+
+\hspace{5mm} De seguida, na fase de otimização das queries analíticas, começou-se por analisar o plano das queries, e tentar perceber possíveis otimizações, no entanto, onde se conseguiu melhores resultados, foi na colocação de views materializadas e indexs. No entanto, é de realçar que não houve grandes melhorias, devendo-se isto ao facto de a configuração de referência ainda ser "simples".
+
+\hspace{5mm}Em relação ao passo sobre a replicação, o grupo não conseguiu implementar, no entanto, percebe-se o conceito de replicação e processamento distribuído, e as consequências de processamento que o mesmo acarreta, para se garantir fiabilidade e consistência dos dados. Deste modo, também a equipa sabe, que o processo de replicação fica mais facilitado com base de dados não relacionais (NoSQL).
+
+\hspace{5mm} Por fim, e não menos importante, apesar de não se ter atingido todos os objtivos inicialemente apresentados, dos que foram concretizados, considera-se um bom resultado.

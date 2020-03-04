@@ -1,0 +1,83 @@
+referência:
+	TPCC-2020-01-02_15_52-TPC-C-time-10-clients-10500-frag-1-think-true.dat
+
+teste 1: SHARED_BUFFER
+
+	TPCC-2020-01-02_15_52-TPC-C-time-10-clients-10500-frag-1-think-true.dat
+	shared_buffer = 128MB
+	print: base-config/config-base-1
+	print: base-config/config-base-2
+	------------------------------------------------------------------------
+	TPCC-2020-01-02_16_12-TPC-C-time-10-clients-10500-frag-1-think-true.dat
+	shared_buffer = 256MB
+	print: shared_buffer/1-1
+	print: shared_buffer/1-2
+	------------------------------------------------------------------------
+	TPCC-2020-01-02_16_30-TPC-C-time-10-clients-10500-frag-1-think-true.dat
+	shared_buffer = 512MB
+	print: shared_buffer/2-1
+	print: shared_buffer/2-2
+	------------------------------------------------------------------------
+	TPCC-2020-01-02_17_16-TPC-C-time-10-clients-10500-frag-1-think-true.dat
+	shared_buffer = 1024MB
+	print: shared_buffer/3-1
+	print: shared_buffer/3-2
+
+teste2 : WORK_MEM
+
+	TPCC-2020-01-02_15_52-TPC-C-time-10-clients-10500-frag-1-think-true.dat
+	work_mem = 4MB
+	print: config-base-1
+	print: config-base-2
+
+	TPCC-2020-01-02_18_04-TPC-C-time-10-clients-10500-frag-1-think-true.dat
+	work_mem = 8MB
+	print: work_mem/1-1
+	print: work_mem/1-2
+
+	TPCC-2020-01-02_18_06-TPC-C-time-10-clients-10500-frag-1-think-true.dat
+	work_mem = 16MB
+	print: work_mem/2-1
+	print: work_mem/2-2
+
+	TPCC-2020-01-02_18_42-TPC-C-time-10-clients-10500-frag-1-think-true.dat
+	work_mem = 32MB
+	print: work_mem/3-1
+	print: work_mem/3-2
+
+	TPCC-2020-01-02_18_47-TPC-C-time-10-clients-10500-frag-1-think-true.dat
+	work_mem = 64MB
+	print: work_mem/4-1
+	print: work_mem/4-2
+
+teste3 : WAL_BUFFERS
+
+	NOTA: AQUI USAMOS O PADRÃO COM O SHARED_BUFFER=1024MB
+	TPCC-2020-01-02_18_47-TPC-C-time-10-clients-10500-frag
+	
+	TPCC-2020-01-02_20_13-TPC-C-time-10-clients-10500-frag-1-think-true.dat
+	wal_buffers=-1
+	print: wal_buffers/1-1
+	print: wal_buffers/1-2
+
+Configuração ótima:
+
+tentativa1:
+	TPCC-2020-01-02_19_22-TPC-C-time-10-clients-10500-frag-1-think-true.dat
+	shared_buffer = 1024MB
+	work_mem = 16MB
+	print: best-config/1-1
+	print: best-config/1-2
+
+
+	TPCC-2020-01-02_20_13-TPC-C-time-10-clients-10500-frag-1-think-true.dat
+	shared_buffer = 1024MB
+	work_mem = 16MB
+	wal_buffers=-1
+	print: best-config/2-1
+	print: best-config/2-2
+
+
+
+
+
