@@ -1,7 +1,7 @@
-# projeto-abd
-Projeto de Administração de Base de Dados
+# database-optimization
+Database Administration project
 
-# Grupo:
- - José Pereira (josepereira1)
- - Ricardo Petronilho (RicardoPetronilho98)
- - João Marques (marquinhos87)
+# Team:
+- [João Marques](https://github.com/marquinhos87)
+- [José Pereira](https://github.com/josepereira1)
+- [Ricardo Petronilho](https://github.com/RicardoPetronilho98)
